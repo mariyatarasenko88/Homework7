@@ -46,7 +46,7 @@ public class Main {
         int years = 0;
         while (years < 10) {
             years = years + 1;
-            totalPopulations = totalPopulations + 9 * 12;
+            totalPopulations = totalPopulations + (totalPopulations / 1000 * birthRate) - (totalPopulations / 1000 * mortality);
             System.out.println("Год " + years + " численность населения составляет " + totalPopulations);
         }
     }
